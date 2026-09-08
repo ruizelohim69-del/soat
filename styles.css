@@ -1373,3 +1373,60 @@ details p {
     }
 
 }
+/* =========================================
+   SEGUNDO FORMULARIO - BOTONES EN CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .form-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    /* Autorización arriba ocupando todo el ancho */
+    .form-actions .data-consent-box {
+        grid-column: 1 / -1;
+        order: 1;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    /* Botón volver */
+    .form-actions #volverCotizacion {
+        order: 2;
+        width: 100%;
+        min-height: 58px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* Botón continuar */
+    .form-actions #continuarPago {
+        order: 3;
+        width: 100%;
+        min-height: 58px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* Texto de autorización más cómodo */
+    .data-consent-box label {
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .data-consent-box input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+    }
+}
