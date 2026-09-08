@@ -638,6 +638,38 @@
                                 </button>
 
                             </div>
+                            <!-- CONFIRMACIÓN DEL COMPROBANTE -->
+
+                            <section id="confirmacion" class="confirmacion" style="display: none;">
+
+                                <div class="confirmacion-card">
+
+                                    <div class="confirmacion-icono">
+                                        ✓
+                                    </div>
+
+                                    <h2>Comprobante enviado</h2>
+
+                                    <p>
+                                        Hemos recibido la información y el comprobante que enviaste.
+                                    </p>
+
+                                    <p>
+                                        <strong>Tu solicitud se encuentra en proceso de verificación.</strong>
+                                    </p>
+
+                                    <p>
+                                        Si toda la información es correcta y la validación es aprobada,
+                                        tu SOAT será enviado a través de <strong>WhatsApp y correo electrónico.</strong>
+                                    </p>
+
+                                    <button id="irInicio" type="button">
+                                        Ir al inicio
+                                    </button>
+
+                                </div>
+
+                            </section>
 
                         </div>
 
@@ -670,39 +702,6 @@
                         </button>
 
                     </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ================= CONFIRMACIÓN ================= -->
-
-        <section class="confirmation-section" id="confirmacion" style="display: none;">
-
-            <div class="container">
-
-                <div class="confirmation-card">
-
-                    <div class="confirmation-icon">✓</div>
-
-                    <div class="small-title">COMPROBANTE ENVIADO</div>
-
-                    <h2>Tu información está en proceso de verificación</h2>
-
-                    <p>
-                        Hemos recibido el comprobante que enviaste.
-                    </p>
-
-                    <p>
-                        Si toda la información es correcta y la validación es aprobada,
-                        tu SOAT será enviado a través de <strong>WhatsApp y correo electrónico</strong>.
-                    </p>
-
-                    <button type="button" id="irInicio" class="confirmation-button">
-                        Ir al inicio →
-                    </button>
 
                 </div>
 
@@ -869,15 +868,16 @@
 
     <!-- ================= FOOTER ================= -->
 
+    <!-- ================= FOOTER ================= -->
+
     <footer id="contacto">
 
         <div class="container footer-content">
 
-            <div>
+            <div class="footer-brand">
 
                 <div class="logo footer-logo">
-                    <span class="logo-icon">✓</span>
-                    <span>SOAT<span class="logo-highlight">ONLINE</span></span>
+                    <img src="logo.png" alt="SOAT Online" class="logo-image">
                 </div>
 
                 <p>
@@ -904,6 +904,23 @@
 
             </div>
 
+
+            <div class="footer-contact">
+
+                <h4>
+                    ¿Necesitas ayuda?
+                </h4>
+
+                <a href="https://wa.me/573009972281" target="_blank" rel="noopener noreferrer" class="contact-whatsapp">
+                    💬 WhatsApp
+                </a>
+
+                <a href="tel:30430441" class="contact-phone">
+                    📞 3043044137
+                </a>
+
+            </div>
+
         </div>
 
 
@@ -920,7 +937,12 @@
         </div>
 
     </footer>
+    <!-- WHATSAPP FLOTANTE -->
 
+    <a href="https://wa.me/573009972281" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Contactar por WhatsApp">
+        💬
+    </a>
 
     <script src="tarifas.js"></script>
     <script src="script.js"></script>
