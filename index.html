@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOAT Online | Cotiza y compra tu SOAT</title>
+
+    <meta name="description" content="Cotiza tu SOAT de forma rápida y sencilla.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <img src="logo.png" alt="SOAT Online" class="logo-image">
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#preguntas">Preguntas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a href="#cotizador" class="nav-button">
+                Cotizar SOAT
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('imagenes/img1.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('imagenes/img2.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('imagenes/img3.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('imagenes/img4.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('imagenes/img5.jpg');"></div>
+            </div>
+
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <div class="badge">
+                        🛡️ SOAT 2026
+                    </div>
+
+                    <h1>
+                        Tu SOAT en pocos
+                        <span>minutos.</span>
+                    </h1>
+
+                    <p>
+                        Cotiza el valor de tu SOAT de manera rápida,
+                        segura y sencilla.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#cotizador" class="primary-button">
+                            Cotizar mi SOAT
+                            <span>→</span>
+                        </a>
+
+                        <a href="#beneficios" class="secondary-button">
+                            Conoce más
+                        </a>
+
+                    </div>
+
+                    <div class="trust">
+
+                        <div class="trust-item">
+                            <strong>✓</strong>
+                            <span>Proceso sencillo</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <strong>✓</strong>
+                            <span>Tarifas oficiales</span>
+                        </div>
+
+                        <div class="trust-item">
+                            <strong>✓</strong>
+                            <span>Pago seguro</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TARJETA HERO -->
+
+                <div class="hero-card">
+
+                    <div class="card-decoration"></div>
+
+                    <div class="vehicle-icon">
+                        🚗
+                    </div>
+
+                    <h3>
+                        Cotiza tu SOAT
+                    </h3>
+
+                    <p>
+                        Conoce el valor correspondiente
+                        para tu vehículo.
+                    </p>
+
+                    <a href="#cotizador" class="card-button">
+                        Comprar SOAT
+                    </a>
+
+                    <div class="card-security">
+                        🔒 Tus datos son tratados de forma segura
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COTIZADOR ================= -->
+
+        <section class="quote-section" id="cotizador">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="small-title">
+                        COTIZACIÓN SOAT
+                    </div>
+
+                    <h2>
+                        Calcula el valor de tu SOAT
+                    </h2>
+
+                    <p>
+                        Completa la información de tu vehículo
+                        para conocer el valor correspondiente.
+                    </p>
+
+                </div>
+
+
+                <div class="quote-box">
+
+                    <!-- PROGRESO -->
+
+                    <div class="progress">
+
+                        <div class="progress-step active">
+                            <span>1</span>
+                            <p>Vehículo</p>
+                        </div>
+
+                        <div class="progress-line"></div>
+
+                        <div class="progress-step">
+                            <span>2</span>
+                            <p>Datos</p>
+                        </div>
+
+                        <div class="progress-line"></div>
+
+                        <div class="progress-step">
+                            <span>3</span>
+                            <p>Pago</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORMULARIO -->
+
+                    <form id="quoteForm">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="placa">
+                                    Placa del vehículo
+                                </label>
+
+                                <div class="input-wrapper">
+                                    <span>🚘</span>
+
+                                    <input type="text" id="placa" name="placa" placeholder="Ej: ABC123" maxlength="6"
+                                        autocomplete="off" required>
+                                </div>
+
+                                <small>
+                                    Ingresa la placa sin espacios.
+                                </small>
+                                <div class="form-group">
+
+                                    <label for="celular">
+                                        Número de celular
+                                    </label>
+
+                                    <div class="input-wrapper">
+                                        <span>📱</span>
+
+                                        <input type="tel" id="celular" name="celular" placeholder="Ej: 3001234567"
+                                            maxlength="10" autocomplete="tel" inputmode="numeric" required>
+                                    </div>
+
+                                    <small>
+                                        Ingresa un número de celular de 10 dígitos.
+                                    </small>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="tipoVehiculo">
+                                    Tipo de vehículo
+                                </label>
+
+                                <select id="tipoVehiculo" name="tipoVehiculo" required>
+
+                                    <option value="">
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="moto">
+                                        Motocicleta
+                                    </option>
+
+                                    <option value="carro">
+                                        Automóvil familiar
+                                    </option>
+
+                                    <option value="camioneta">
+                                        Campero / Camioneta
+                                    </option>
+
+                                    <option value="seis_pasajeros">
+                                        Vehículo 6 o más pasajeros
+                                    </option>
+
+                                    <option value="taxi">
+                                        Taxi / Auto de negocio
+                                    </option>
+
+                                    <option value="carga">
+                                        Vehículo de carga o mixto
+                                    </option>
+
+                                    <option value="oficial">
+                                        Oficial / Especial
+                                    </option>
+
+                                    <option value="bus_urbano">
+                                        Bus / Buseta urbano
+                                    </option>
+
+                                    <option value="intermunicipal">
+                                        Servicio público intermunicipal
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- SUBTIPO -->
+
+                            <div class="form-group" id="subtipoContainer">
+
+                                <label for="subtipo">
+                                    Características
+                                </label>
+
+                                <select id="subtipo" name="subtipo" required>
+                                    <option value="">
+                                        Primero selecciona el vehículo
+                                    </option>
+                                </select>
+
+                            </div>
+
+
+                            <!-- CILINDRAJE -->
+
+                            <div class="form-group hidden" id="cilindrajeContainer">
+
+                                <label for="cilindraje">
+                                    Cilindraje
+                                </label>
+
+                                <select id="cilindraje" name="cilindraje">
+                                    <option value="">
+                                        Selecciona el cilindraje
+                                    </option>
+                                </select>
+
+                            </div>
+
+
+                            <!-- MODELO -->
+
+                            <div class="form-group hidden" id="modeloContainer">
+
+                                <label for="modelo">
+                                    Modelo del vehículo
+                                </label>
+
+                                <select id="modelo" name="modelo">
+
+                                    <option value="">
+                                        Selecciona el modelo
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-actions">
+
+                            <button type="submit" class="calculate-button">
+                                <span>Calcular valor del SOAT</span>
+                                <span>→</span>
+                            </button>
+
+                        </div>
+
+                    </form>
+
+
+                    <!-- RESULTADO -->
+
+                    <div id="result" class="result hidden">
+
+                        <div class="result-icon">
+                            ✓
+                        </div>
+
+                        <div class="result-info">
+
+                            <span class="result-label">
+                                VALOR DEL SOAT 2026
+                            </span>
+
+                            <h3 id="vehicleSummary">
+                                -
+                            </h3>
+
+                            <div class="price" id="soatPrice">
+                                $0
+                            </div>
+
+                            <p>
+                                Tarifa máxima comercial 2026
+                            </p>
+
+                        </div>
+
+                        <button type="button" id="continueButton" class="continue-button">
+                            Continuar
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= DATOS DEL PROPIETARIO ================= -->
+
+        <section class="quote-section" id="datosPropietario" style="display: none;">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="small-title">
+                        DATOS DEL PROPIETARIO
+                    </div>
+
+                    <h2>
+                        Completa tus datos
+                    </h2>
+
+                    <p>
+                        Necesitamos esta información para continuar con tu SOAT.
+                    </p>
+
+                </div>
+
+
+                <div class="quote-box">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="tipoDocumento">
+                                Tipo de documento
+                            </label>
+
+                            <select id="tipoDocumento" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="CC">Cédula de ciudadanía</option>
+                                <option value="CE">Cédula de extranjería</option>
+                                <option value="PPT">Permiso por protección temporal</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="numeroDocumento">
+                                Número de documento
+                            </label>
+
+                            <input type="text" id="numeroDocumento" placeholder="Ingresa tu documento" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="nombrePropietario">
+                                Nombre completo
+                            </label>
+
+                            <input type="text" id="nombrePropietario" placeholder="Nombre y apellidos" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="telefonoPropietario">
+                                Número de teléfono
+                            </label>
+
+                            <input type="tel" id="telefonoPropietario" placeholder="3001234567" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="correoPropietario">
+                                Correo electrónico
+                            </label>
+
+                            <input type="email" id="correoPropietario" placeholder="correo@ejemplo.com" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="ciudadPropietario">
+                                Ciudad
+                            </label>
+
+                            <input type="text" id="ciudadPropietario" placeholder="Ej: Bogotá" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button type="button" id="volverCotizacion" class="secondary-button">
+                            ← Volver
+                        </button>
+                        <!-- AUTORIZACIÓN DE DATOS PERSONALES -->
+
+                        <div class="data-consent-box">
+
+                            <label>
+                                <input type="checkbox" id="aceptaDatos">
+
+                                <span>
+                                    Acepto el tratamiento de mis datos personales de acuerdo
+                                    con la política de tratamiento de datos.
+                                </span>
+                            </label>
+
+                        </div>
+                        <button type="button" id="continuarPago" class="calculate-button">
+                            Continuar
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MÉTODOS DE PAGO ================= -->
+
+        <section class="quote-section" id="metodosPago" style="display: none;">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="small-title">
+                        PAGO DEL SOAT
+                    </div>
+
+                    <h2>
+                        Selecciona tu método de pago
+                    </h2>
+
+                    <p>
+                        Realiza el pago correspondiente al valor de tu cotización.
+                    </p>
+
+                </div>
+
+
+                <div class="quote-box">
+
+                    <!-- RESUMEN DEL VALOR -->
+
+                    <div class="result-info">
+
+                        <span class="result-label">
+                            VALOR A PAGAR
+                        </span>
+
+                        <h3 id="pagoDescripcion">
+                            -
+                        </h3>
+
+                        <div class="price" id="pagoValor">
+                            $0
+                        </div>
+
+                    </div>
+
+
+                    <!-- MERCADO PAGO -->
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Mercado Pago
+                        </h3>
+
+                        <p>
+                            Realiza tu pago mediante un enlace seguro de Mercado Pago.
+                        </p>
+
+                        <a href="#" id="mercadoPagoButton" class="calculate-button" target="_blank"
+                            rel="noopener noreferrer">
+                            Pagar con Mercado Pago →
+                        </a>
+
+                    </div>
+
+
+                    <!-- BRE-B -->
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Pago mediante QR
+                        </h3>
+
+                        <p>
+                            Escanea el código QR y realiza el pago por el valor indicado.
+                        </p>
+
+                        <div style="text-align: center; margin: 20px 0;">
+
+                            <img src="pago-qr.png" alt="Código QR para realizar el pago"
+                                style="max-width: 220px; width: 100%;">
+                            <button type="button" id="yaPagueQR" class="continue-button">
+                                Ya realicé el pago
+                            </button>
+                            <div id="comprobanteQR" style="display: none; margin-top: 20px;">
+
+                                <h3>Comprobante de pago</h3>
+
+                                <p>
+                                    Adjunta una foto o captura del comprobante de tu pago.
+                                </p>
+
+                                <input type="file" id="archivoComprobante" accept="image/*">
+
+                                <br><br>
+
+                                <button type="button" id="enviarComprobante" class="continue-button">
+                                    Enviar comprobante
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <p>
+                            <strong>Valor a pagar:</strong>
+                            <span id="qrValor">$0</span>
+                        </p>
+                        <!-- MEDIOS DE PAGO img -->
+
+                        <div class="payment-methods-box">
+
+                            <p>
+                                <strong>Medios de pago disponibles</strong>
+                            </p>
+
+                            <div class="payment-methods-image-box">
+
+                                <img src="metodos.png" alt="Medios de pago disponibles">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button type="button" id="volverDatos" class="secondary-button">
+                            ← Volver
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONFIRMACIÓN ================= -->
+
+        <section class="confirmation-section" id="confirmacion" style="display: none;">
+
+            <div class="container">
+
+                <div class="confirmation-card">
+
+                    <div class="confirmation-icon">✓</div>
+
+                    <div class="small-title">COMPROBANTE ENVIADO</div>
+
+                    <h2>Tu información está en proceso de verificación</h2>
+
+                    <p>
+                        Hemos recibido el comprobante que enviaste.
+                    </p>
+
+                    <p>
+                        Si toda la información es correcta y la validación es aprobada,
+                        tu SOAT será enviado a través de <strong>WhatsApp y correo electrónico</strong>.
+                    </p>
+
+                    <button type="button" id="irInicio" class="confirmation-button">
+                        Ir al inicio →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= BENEFICIOS ================= -->
+
+        <section class="benefits-section" id="beneficios">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="small-title">
+                        ¿POR QUÉ ELEGIRNOS?
+                    </div>
+
+                    <h2>
+                        Un proceso pensado para ti
+                    </h2>
+
+                </div>
+
+
+                <div class="benefits-grid">
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Rápido
+                        </h3>
+
+                        <p>
+                            Realiza tu cotización de forma
+                            sencilla y sin procesos complicados.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            🛡️
+                        </div>
+
+                        <h3>
+                            Seguro
+                        </h3>
+
+                        <p>
+                            Protegemos la información suministrada
+                            durante el proceso.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Diferentes formas de pago
+                        </h3>
+
+                        <p>
+                            Próximamente podrás pagar mediante
+                            Mercado Pago o QR.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PREGUNTAS ================= -->
+
+        <section class="faq-section" id="preguntas">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="small-title">
+                        PREGUNTAS FRECUENTES
+                    </div>
+
+                    <h2>
+                        ¿Tienes alguna pregunta?
+                    </h2>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <details>
+
+                        <summary>
+                            ¿Qué es el SOAT?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            El SOAT es el Seguro Obligatorio de
+                            Accidentes de Tránsito y ampara la
+                            atención de las víctimas de accidentes
+                            de tránsito.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            ¿Cómo se calcula el valor?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            El valor depende de la categoría,
+                            características y antigüedad del
+                            vehículo, según las tarifas vigentes.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            ¿Puedo pagar en línea?
+                            <span>+</span>
+                        </summary>
+
+                        <p>
+                            Sí. En la siguiente etapa integraremos
+                            los métodos de pago disponibles.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contacto">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <div class="logo footer-logo">
+                    <span class="logo-icon">✓</span>
+                    <span>SOAT<span class="logo-highlight">ONLINE</span></span>
+                </div>
+
+                <p>
+                    Cotización y gestión de SOAT
+                    de forma sencilla.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#cotizador">
+                    Cotizar
+                </a>
+
+                <a href="#preguntas">
+                    Preguntas frecuentes
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 SOAT Online. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="tarifas.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            slides[currentSlide].classList.add('active');
+        }, 5000);
+    </script>
+</body>
+
+</html>
