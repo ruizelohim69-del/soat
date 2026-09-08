@@ -1346,3 +1346,30 @@ details p {
     }
 
 }
+/* =========================================
+   IMÁGENES DEL HERO EXCLUSIVAS PARA CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .hero-slide:nth-child(1) {
+        background-image: url("imagenes/imgc1.jpg") !important;
+    }
+
+    .hero-slide:nth-child(2) {
+        background-image: url("imagenes/imgc2.jpg") !important;
+    }
+
+    .hero-slide:nth-child(3) {
+        background-image: url("imagenes/imgc3.jpg") !important;
+    }
+
+    .hero-slide:nth-child(4) {
+        background-image: url("imagenes/imgc4.jpg") !important;
+    }
+
+    .hero-slide:nth-child(5) {
+        background-image: url("imagenes/imgc5.jpg") !important;
+    }
+
+}
