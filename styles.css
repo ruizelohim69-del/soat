@@ -1377,6 +1377,44 @@ details p {
    SEGUNDO FORMULARIO - BOTONES EN CELULAR
    ========================================= */
 
+   /* =========================================
+   SEGUNDO FORMULARIO - BOTONES Y AUTORIZACIÓN
+   ========================================= */
+
+/* COMPUTADOR */
+.form-actions {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 150px minmax(300px, 1fr) 150px;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.form-actions #volverCotizacion {
+    grid-column: 1;
+    width: 100%;
+    min-height: 58px;
+}
+
+.form-actions .data-consent-box {
+    grid-column: 2;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.form-actions #continuarPago {
+    grid-column: 3;
+    width: 100%;
+    min-height: 58px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 @media (max-width: 600px) {
 
     .form-actions {
